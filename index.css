@@ -1,0 +1,386 @@
+@font-face{
+	font-family:'PT Sans', sans-serif;
+	
+	src:url("https://fonts.googleapis.com/css?family=PT+Sans");
+	
+}
+
+@font-face{
+	font-family:'Raleway', sans-serif;
+	src:url("https://fonts.googleapis.com/css?family=Raleway");
+}
+
+@font-face{
+	font-family:'Poppins', sans-serif;
+	src:"https://fonts.googleapis.com/css?family=Open+Sans|Poppins";
+}
+
+@font-face{
+	font-family:'Lato', sans-serif;
+	src:"https://fonts.googleapis.com/css?family=Lato";
+}
+
+nav{
+	color: white;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 24px;
+	text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+	height: 50px;
+}
+
+nav ul li{
+	margin: 2px 0px;
+	padding: 8px 10px;
+}
+
+nav ul li a{
+	color: inherit;
+	text-decoration: none;
+}
+
+nav ul li:hover{
+	border-bottom: 4px solid white;
+	cursor: pointer;
+}
+
+nav ul li:active{
+	border-bottom: 1px solid white;
+	border:1px solid rgba(0,0,0,0.4);
+	border-radius: 4px;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+.title{
+	width: 100%;
+	height: 400px;
+	background-image: url("img//title.jpg");
+	background-size: cover;
+	filter: blur(1px);
+	z-index: -100;
+	position: fixed;
+	
+}
+
+.actualTitle{
+	width: 100%;
+	z-index: -90;
+	position: fixed;
+}
+
+.myface{
+	width: 320px;
+	height: 320px;
+	background-size: contain;
+	border-radius: 50%;
+	background-image: url("img//myface.jpg");
+	margin: 50px auto;
+}
+
+.quote{
+	font-size: 40px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	margin: 80px auto;
+}
+
+.quote-author{
+	font-size: 40px;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	text-align: right;
+}
+
+.content{
+	width: 100%;
+	z-index: 100;
+	box-shadow: -20px 0px 30px rgba(0,0,0,0.9);
+	background-color: white;
+	top:400px;
+	position: relative;
+}
+
+#about{
+	padding-top: 30px;
+}
+
+.all-title{
+	text-align: center;
+	font-size: 40px;
+	font-weight: lighter;
+	margin: 30px;
+	color: rgba(0,0,0,0.5);
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+#portfolio{
+	padding-top: 30px;
+}
+
+.name{
+	font-family:'Poppins', sans-serif;
+	font-size: 30px;
+}
+
+.name-container{
+	text-align: center;
+	border-left: 50px solid #FF1744;
+}
+
+.aim{
+	padding: 0px 3px 3px 0px;
+	border-bottom: 3px solid grey;
+	border-right: 3px solid grey;
+
+}
+
+.base-detail{
+	margin-top: 20px;
+	font-size: 16pt;
+	letter-spacing: 2px;
+	padding: 5px;
+	
+}
+
+.showMap{
+	cursor:pointer;
+}
+
+#map{
+	width: 100%;
+	margin-top:10px;
+	padding-bottom: 50%;
+	border:2px solid grey;
+}
+
+
+
+.rate{
+	margin-top:20px;
+	padding: 20px;
+}
+
+
+.skill-name{
+	font-family:'Poppins', sans-serif;
+	font-size: 14pt;
+	line-height: 1.5em;
+}
+
+.rate div.grid-contain{
+	margin: 20px auto;
+	border-left: 15px solid purple;
+	padding-left: 10px;
+	border-right: 2px solid black;
+	padding-right: 2px;
+}
+
+.rating-com{
+	background-color: forestgreen;
+	height: 20px;
+	width: 80%;
+}
+
+.rating-r{
+	background-color: aqua;
+	height: 20px;
+	width: 100%;
+}
+
+.rating-ps{
+	background-color: aqua;
+	height: 20px;
+	width: 90%;
+}
+
+.rating-lead{
+	background-color: yellow;
+	height: 20px;
+	width: 70%;
+}
+
+.rating-manage{
+	background-color: forestgreen;
+	height: 20px;
+	width: 85%;
+}
+
+.rating-goal{
+	background-color: aqua;
+	height: 20px;
+	width: 100%;
+}
+
+.rating-ct{
+	background-color: aqua;
+	height: 20px;
+	width: 90%;
+}
+
+a{
+	color: black;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.animateGrow{
+	animation: grow 700ms forwards;
+}
+
+@-webkit-keyframes grow{
+	0%{
+		width: 0%;
+	}
+	100{
+		width: auto;
+	}
+}
+
+keyframe grow{
+	0%{
+		width: 0%;
+	}
+	100{
+		width: auto;
+	}
+}
+
+.skills hr{
+	width: 80%;
+	border: 1px solid rgba(0,0,0,0.4);
+}
+
+.skills h2{
+	text-align: center;
+}
+
+.project{
+	position: relative;
+	box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+	overflow: hidden;
+	margin: 10px;
+}
+.project img{
+	width: 100%;
+	height: auto;
+}
+
+.project .cover{
+	position: absolute;
+	background-color: black;
+	opacity: 0.3;
+	top:0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+	transition: all 500ms;
+}
+
+.project h3{
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	padding: 0px;
+	margin: 0px;
+	color: white;
+	font-weight: 600;
+	letter-spacing: 4px;
+	font-size: 20pt;
+	font-family:'Lato', sans-serif;
+}
+
+.project .description{
+	
+	background-color: white;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	box-shadow: 0px -3px 3px rgba(0,0,0,0.4);
+	margin: 0px;
+}
+
+.project:hover .description{
+	position: static;
+}
+
+.project:hover .cover{
+	opacity: 0;
+}
+
+.project:hover h3{
+	opacity: 0;
+}
+
+
+hr{
+	margin: 30px auto;
+	width: 63%;
+	min-width: 300px;
+}
+
+#contact .grid-60{
+	text-align: right;
+}
+
+
+footer{
+	margin-top: 40px;
+	width:100%;
+	color: grey;
+	font-size: 16px;
+}
+
+
+
+
+@media screen and (max-width:700px){
+
+	.project .description{
+		position: static;
+		z-index: 200;
+	}
+	.project .cover{
+		opacity: 0.2;
+	}
+	
+	a{
+		color: black;
+		text-decoration-line: none;
+	}
+	
+.quote{
+	font-size: 20px;
+	color: white;
+	text-align: right;
+	margin: 0px 20px 0px 0px;
+}
+
+.quote-author{
+	font-size: 20px;
+	color: white;
+	text-align: right;
+	margin: 0px 20px 0px 0px;
+
+}
+
+.myface{
+	height: 250px;
+	width: 250px;
+	
+}	
+
+.soft-skills{
+		
+		padding-top: 100px;
+		
+	}
+	
+}
+
+
